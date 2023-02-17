@@ -19,4 +19,4 @@ print("Negative lookahead:", re.findall(r'\w+\s+(\d+\.\d+\.\d+\.\d+)\s+\w+\s+(?!
 print("Positive lookbehind:", re.findall(r'\w+(?<=ONLINE)\s+(\d+\.\d+\.\d+\.\d+)\s+\w+\s+\w+', texto))
 
 # nEGATIVE lookbehind
-print("Positive lookbehind:", re.findall(r'\w+(?<!ONLINE)\s+(\d+\.\d+\.\d+\.\d+)\s+\w+\s+\w+', texto))
+print("Positive lookbehind:", re.findall(r'\w+(?<!ONLINE)\s+\d+\.\d+\.\d+\.\d+\s+\w+\s+\w+', texto))
